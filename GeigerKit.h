@@ -8,12 +8,12 @@
 //                        18             // (A4) RESERVED for I2C
 #define IR_PIN            17             // (A3)Interrupt 1 for IR sensor
 #define SPKR_MUTE         16             // (A2) signal pin to mute speaker
-#define ALARM_PIN         15             // (A1) Outputs HIGH when Alarm triggered
+#define NULL_BUTTON       15             // Null button used to set the null point in tone mode
 #define TONE_POT          14             // (A0) tone adjustment via pot
 #define LED_PIN           13             // for debug only - flashes 5X at startup
 #define TONE_PIN          12             // PWM output to speaker or piezo for tone mode
-#define NULL_BUTTON       11             // Null button used to set the null point in tone mode
-#define SEL_BUTTON        10             // button to toggle alternate display and set alarm
+#define SEL_BUTTON        11             // button to toggle alternate display and set alarm
+#define ALARM_PIN         10             // (A1) Outputs HIGH when Alarm triggered
 #define TUBE_SEL           9             // jumper to select alt conversion to uSv
 #define LCDPIN_D7          8             // LCD D7 pin
 #define LCDPIN_D6          7             // LCD D6 pin
