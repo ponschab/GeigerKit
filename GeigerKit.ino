@@ -30,15 +30,16 @@
 //----------------------------------------------------------------------------------------------+
 //                              User setup #defines
 //----------------------------------------------------------------------------------------------+
-#define IR_SONY        false            // use Sony IR protocol instead of NEC 
-#define IR_RC5         false            // use Phillips RC5 IR protocol instead of NEC 
-#define EIGHT_CHAR     false            // formats for 2x8 LCD when true
-#define ANDROID        false            // include Android support if true
-#define TONE_POT_ADJ   false            // if true, use a pot attached to A0 to adjust tone instead of menu
+#define IR_SONY          false            // use Sony IR protocol instead of NEC 
+#define IR_RC5           false            // use Phillips RC5 IR protocol instead of NEC 
+#define EIGHT_CHAR       false            // formats for 2x8 LCD when true
+#define ANDROID          false            // include Android support if true
+#define TONE_POT_ADJ     false            // if true, use a pot attached to A0 to adjust tone instead of menu
+#define PINMAP_IMPEXERIS true             // if true, use an adapted pin layout for impexeris LCD shield 
 //////////////////////////// THESE DEFINES HAVE PRECOMPILER ISSUES ! ///////////////////////////
-#define ANALOG_METER   false            // if true, support for analog meter output - REQUIRES HARDWARE - see site
+#define ANALOG_METER     false            // if true, support for analog meter output - REQUIRES HARDWARE - see site
 /////////////////////////////////  YOU MUST ALSO UNCOMMENT #include <Wire.h> IF TRUE
-#define DOGM_LCD       false            // if true, DogM LCD used for display (SPI interface)
+#define DOGM_LCD         false            // if true, DogM LCD used for display (SPI interface)
 ///////////////////////////////    YOU MUST ALSO UNCOMMENT DogLcd lcd(...) IF TRUE
 //----------------------------------------------------------------------------------------------+
 //                       End user setup #defines (others in GeigerKit.h)
