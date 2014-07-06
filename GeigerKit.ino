@@ -30,7 +30,7 @@
 //----------------------------------------------------------------------------------------------+
 //                              User setup #defines
 //----------------------------------------------------------------------------------------------+
-#define IR_SONY          false            // use Sony IR protocol instead of NEC 
+#define IR_SONY          true             // use Sony IR protocol instead of NEC 
 #define IR_RC5           false            // use Phillips RC5 IR protocol instead of NEC 
 #define EIGHT_CHAR       false            // formats for 2x8 LCD when true
 #define ANDROID          false            // include Android support if true
