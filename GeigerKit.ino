@@ -160,11 +160,11 @@ void setup(){
 #if (EIGHT_CHAR)
   lcd.print(F("GEIGER!"));              // display a simple banner
   lcd.setCursor(0,1);                   // set cursor on line 2
-  lcd.print(F(" v10.3"));               // display the version
+  lcd.print(F(" v11.0"));               // display the version
 #else
   lcd.print(F("   GEIGER KIT"));        // display a simple banner
   lcd.setCursor(0,1);                   // set cursor on line 2
-  lcd.print(F("   Ver. 11.0"));        // display the version
+  lcd.print(F("   Ver. 11.0"));         // display the version
 #endif
   delay (1500);                         // leave the banner up for a bit
   clearDisp();                          // clear the screen
