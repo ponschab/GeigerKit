@@ -12,7 +12,7 @@ void Check_IR(){ // check if remote used and process the menu
   boolean directEntry = false;          // flag indicating whether the user is directly entering a numeric value
   unsigned int decimalDiv = 0;          // decimal divisor for entry of floating point numbers
   if(!IR_Avail)return;                  // just get out if a key on IR has not been pressed
-  //detachInterrupt(0);                 // uncomment to not count while in menu
+  detachInterrupt(0);                   // do not count while in menu
   do {
     if(!IR_Avail) continue;
     switch (IR_Cmnd){                   // a case for each func key if desired
@@ -43,6 +43,7 @@ void Check_IR(){ // check if remote used and process the menu
       else {                              // do this stuff when leaving menu
         Get_Settings();                   // start using the new settings
         fastCnt=0;                        // keep tone mode and bargraph from going crazy when exiting
+        attachInterrupt(0,GetEvent,FALLING);  // attach interrupt again to resume counting
       }
       break;
 

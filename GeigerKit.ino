@@ -1,4 +1,4 @@
-/* GeigerKit_Default sketch     SHIPPING    21796 / 877 bytes in 1.0.5               bHogan 6/6/14
+/* GeigerKit_Default sketch     Beta    21854 / 877 bytes in 1.0.5               bHogan 7/11/14
  * This sketch was written for the DIYGeigerCounter Kit sold here:
  *      https://sites.google.com/site/diygeigercounter/home
  * DIY Geiger invests a lot time and resources in providing this open source code. Please support it 
@@ -9,10 +9,11 @@
  * The features in this release are discribed on the DIYGeigerCounter web site:
  * http://sites.google.com/site/diygeigercounter/software-features
  * NEW THIS VERSION:
- * - Uses NEC IR protocol for supplied remote. Sony or Phillips supported via #define
+ * - No counts accumulate while in menu mode (causes alerts on monitoring sites)
  * 
  * SETUP: See GeigerKit.h for pin maping
- * TODO: - CHECK SRAM!
+ * TODO: 
+ * - 
  *
  * THIS PROGRAM AND IT'S MEASUREMENTS IS NOT INTENDED TO GUIDE ACTIONS TO TAKE, OR NOT
  * TO TAKE, REGARDING EXPOSURE TO RADIATION. THE GEIGER KIT AND IT'S SOFTWARE ARE FOR
@@ -160,11 +161,11 @@ void setup(){
 #if (EIGHT_CHAR)
   lcd.print(F("GEIGER!"));              // display a simple banner
   lcd.setCursor(0,1);                   // set cursor on line 2
-  lcd.print(F(" v11.0"));               // display the version
+  lcd.print(F(" v11.1b"));               // display the version
 #else
   lcd.print(F("   GEIGER KIT"));        // display a simple banner
   lcd.setCursor(0,1);                   // set cursor on line 2
-  lcd.print(F("   Ver. 11.0"));         // display the version
+  lcd.print(F("   Ver. 11.1b"));        // display the version
 #endif
   delay (1500);                         // leave the banner up for a bit
   clearDisp();                          // clear the screen
